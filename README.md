@@ -1,6 +1,6 @@
 # fix_overscan_with_xrandr
 
-Shell scripts to fix overscan with xrandr.
+*Shell scripts to fix overscan with xrandr.*
 
 Overscan is the situation in which not all of a televised image is present on a viewing screen. It commonly occurrs when using TV screens as monitors.
 
