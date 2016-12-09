@@ -1,0 +1,11 @@
+# http://www.thinkwiki.org/wiki/Xorg_RandR_1.2#Now_automate_it_on_login
+# If an external monitor is connected, place it with xrandr
+# External output may be "VGA" or "VGA-0" or "DVI-0" or "TMDS-1"
+EXTERNAL_OUTPUT="HDMI-0"
+EXTERNAL_RESOLUTION=1280x720
+
+xrandr | grep $EXTERNAL_OUTPUT | grep " connected " 
+if [ $? -eq 0 ]; then
+	#xrandr --output $EXTERNAL_OUTPUT --set "underscan" "on"
+	xrandr --output "HDMI-0" --mode "$EXTERNAL_RESOLUTION" --set "underscan hborder" "35" --set "underscan vborder" "23" --set "underscan" "on"
+fi
