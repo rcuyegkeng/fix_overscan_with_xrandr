@@ -56,6 +56,17 @@ HDMI-0 connected primary 1280x720+0+0 (normal left inverted right x axis y axis)
 xrandr --output "HDMI-0" --mode "$EXTERNAL_RESOLUTION" --set "underscan hborder" "35" --set "underscan vborder" "23" --set "underscan" "on"`
 ```
 
+## Automating xrandr on login
+
+- '45custom_xrandr-settings' script based on [Automate xrandr on login](http://www.thinkwiki.org/wiki/Xorg_RandR_1.2#Now_automate_it_on_login)
+
+- Place your xrandr call in '/etc/X11/Xsession.d/45custom_xrandr-settings'.
+
+## Alternatively, put the xrandr call in .xprofile.
+
+- This will only affect a single user.
+- Place your xrandr call in $HOME/.xprofile
+
 ## Resources:
 
 [xrandr - ArchWIki](https://wiki.archlinux.org/index.php/xrandr)
