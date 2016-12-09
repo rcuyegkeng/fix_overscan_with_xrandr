@@ -70,5 +70,7 @@ xrandr --output "HDMI-0" --mode "$EXTERNAL_RESOLUTION" --set "underscan hborder"
 ## Resources:
 
 [xrandr - ArchWIki](https://wiki.archlinux.org/index.php/xrandr)
+
 [Automate xrandr on login](http://www.thinkwiki.org/wiki/Xorg_RandR_1.2#Now_automate_it_on_login)
+
 [Overscan - Wikipedia](https://en.wikipedia.org/wiki/Overscan)
