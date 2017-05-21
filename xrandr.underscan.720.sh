@@ -12,6 +12,6 @@ EXTERNAL_RESOLUTION="1280x720"
 xrandr | grep $EXTERNAL_OUTPUT | grep " connected " #| grep $EXTERNAL_RESOLUTION
 if [ $? -eq 0 ]; then
 #	echo "Setting Display Properties with xrandr."
-	xrandr --output "HDMI-0" --mode "$EXTERNAL_RESOLUTION" --set "underscan hborder" "35" --set "underscan vborder" "23" --set "underscan" "on"
+	xrandr --output "$EXTERNAL_OUTPUT" --mode "$EXTERNAL_RESOLUTION" --set "underscan hborder" "35" --set "underscan vborder" "23" --set "underscan" "on"
 fi
 
